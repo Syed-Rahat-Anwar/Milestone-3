@@ -4,33 +4,33 @@ function brickCalculator(buildingFloor){
 
 
 if(buildingFloor <=0 ){
-    return  'Out of the Program' ;
+    return  'Out of the Program';
 }
     
 else if(buildingFloor <=10){
 
-        var result= 15*1000*buildingFloor ; // for 1 feet we need to have 1000 brick
+        var  result = 15*1000*buildingFloor ; // for 1 feet we need to have 1000 brick
         return result;
 
     }
      
 else if (buildingFloor >10 && buildingFloor <=20){
 
-        var result=  150000*12*1000*; // for 1 feet we need to have 1000 brick
+        var result = 150000+12*1000*(buildingFloor-10) ; // for 1 feet we need to have 1000 brick and 150000 for 1st 10 floor
         return result;
 
     }
 else
 {
 
-        var result=150000+120000+10*1000; // for 1 feet we need to have 1000 brick
+        var result=150000+120000+10*1000*(buildingFloor -20); // for 1 feet we need to have 1000 brick
         return result;
 
     }
 
 }
 
-var brickOutput= brickCalculator(30);
+var brickOutput= brickCalculator(23);
 console.log(brickOutput);
 
 // ******************feet to mile conversion using javascript********************
@@ -84,7 +84,7 @@ return smallestName;
 
 var friendListName=['rahim','karim','shahana','abid','pia','babu', 'mushfiqur'];
 
-var tinyFriendOutput = tinyFriend(friendListName).;
+var tinyFriendOutput = tinyFriend(friendListName);
 
 console.log("smallest name length :",tinyFriendOutput);
 
